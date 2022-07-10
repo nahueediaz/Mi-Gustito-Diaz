@@ -1,0 +1,573 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Header de todas las paginas*/
+
+        .inicioCompl{
+            background-color: rgb(11, 11, 11);
+        }
+
+        nav{
+            height: 80px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .logo{
+            position: absolute;
+            padding: 0 50px;
+        }
+        .logo__inicio{
+            height: 80px;
+        }
+
+        nav ul{
+            float: right;
+            margin-right: 20px;
+            display:flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        nav ul li{
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 7px 13px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover{
+            background: #ef8354;
+            transition: .5s;
+        }
+
+        .icon{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #check{
+            display: none;
+        }
+
+        /* Seccion Index */
+        #home{
+            background: url(./imagenes/fondo-3.jpg) no-repeat fixed;
+            background-size: cover;
+            height: calc(100vh - 99px);
+            margin: 0 auto;
+        }
+        .bienvenidos{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+            " titulo "
+            " subtitulo  "
+            " imagen"
+            " imagen"
+            ;
+            }
+        
+            .bienvenidos__titulo{
+                height: 50px;
+            }
+            .bienvenidos__titulo h1{
+                font-family: 'Playfair Display', serif;
+                text-transform: uppercase;
+                font-size: 2.8rem;
+                letter-spacing: 6px;
+                text-align: center;
+                padding-top: 35px;
+                padding-bottom: 20px;
+                color: white;
+            }
+            .subtitulo{
+                height: 50px;
+            }
+            .subtitulo h2{
+                font-family: 'DM Sans', sans-serif;
+                font-size: 2.2rem;
+                letter-spacing: 5px;
+                color: beige;
+                padding-top: 20px;
+                margin-left: 30px;
+            }
+        
+            .producto__dest{
+                grid-row: 3 / 5;
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                overflow: hidden;
+
+            }
+
+            .producto__dest__img{
+                margin: 27px;
+                border-radius: 12px;
+                box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.90);
+                height: 200px;
+                width: 200px;
+            }
+
+        /*Seccion productos*/
+        .container__pr{
+            min-height: 100vh;
+            background: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.5)),
+            url("https://scontent.fepa2-1.fna.fbcdn.net/v/t1.6435-9/119097010_1600685743452429_5478499972844125379_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=973b4a&_nc_ohc=KUmDVw9zSbwAX-48cWM&_nc_ht=scontent.fepa2-1.fna&oh=00_AT-Y9EfK3QwGatgBxoN_6R5M4NYnyX9KtKXhc6-T3JfgvQ&oe=62D0D15B") no-repeat center center fixed ;
+            background-size: cover; 
+            }
+
+            .container{
+                margin: 0 auto;
+                align-items: center;
+                width: 70%;
+                }
+                
+                    .container__tit{
+                        color: white;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding-top: 30px;
+                        grid-column: 1 / 5;
+                        grid-row: 1 / 2;
+                        font-family: 'IBM Plex Mono', monospace; 
+                        font-size: 30px;
+                        letter-spacing: 8px;
+                    }
+        
+                    .container__list{
+                        color: white;
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        grid-template-rows: 1fr 2fr 1fr;
+                        align-content: center;
+                        width: 100%;
+                        margin: 0 auto;
+                        border: 9px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+        
+                    .list{
+                        grid-column: 1 / 3;
+                        grid-row: 2 / 3;
+                    }
+        
+                    .list2{
+                        grid-column: 3 / 5;
+                        grid-row: 2 / 3;
+                    }
+                    .list .uno{
+                        display: flex;
+                        flex-direction: column;
+                        letter-spacing: 2px;
+                        gap: 1.6rem;
+                        text-align: center;
+                        padding: 5px;
+                        list-style: none;
+                        font-family: 'IBM Plex Mono', monospace;
+                        font-style: italic;
+                        font-size: 15px;
+
+                    }
+        
+                    .list2 .dos{
+                        display: flex;
+                        flex-direction: column;
+                        letter-spacing: 2px;
+                        gap: 1.6rem;
+                        text-align: center;
+                        padding: 5px;
+                        list-style: none;
+                        font-family: 'IBM Plex Mono', monospace;
+                        font-style: italic;
+                        font-size: 15px;
+                    }
+
+        .colorFon{
+            background-color: rgb(11, 11, 11);
+            margin: 0 auto;
+        }
+
+        .acerca{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            justify-content: center;
+            gap: 2rem;
+            padding: 30px;
+            width: 100%;
+        }
+
+        .nosotros{
+            grid-column: 1 / 9;
+            grid-row: 1 / 3;
+            display:flex;
+            flex-direction: row;
+            overflow: hidden;
+            }
+            .nosotros__img img{
+                height: 400px ;
+                width: 700px;
+            }
+
+            .nosotros2{
+                grid-column: 1 / 9;
+                grid-row: 3 / 5;
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+            }
+
+            .nosotros2__img img{
+                height: 400px;
+                width: 700px;
+            }
+        
+
+        .acerca__de{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1.7rem;
+            letter-spacing: 1.5px;
+        }
+
+        .acerca__titulo{
+            font-family: 'Alegreya Sans', sans-serif;
+            font-size: 46px;
+            letter-spacing: 4px;
+            color: white;
+        }
+
+        .acerca__info{
+            font-family: 'Libre Baskerville', serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-align: justify;
+            color: antiquewhite;
+        }
+
+
+        /* Seccion Contacto*/
+
+        .fond{
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+        .form{
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            margin: auto;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            padding: 56px 24px;
+        }
+
+        .form__input{
+            font-family: inherit;
+            font-size: 16px;
+            padding: 12px 16px;
+            outline: none;
+            border: none;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .form__container{
+            width: 100%;
+            display: grid;
+            gap: 16px;
+            grid-auto-columns: 100%;
+        }
+
+        .form__titulo{
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 7px;
+            }
+
+        .enviado{
+            font-family: inherit;
+            font-size: 16px;
+            background-color: #089FE0;
+            color: white;
+            border: none;
+            font-weight: 300;
+            padding: 11px;
+            border-radius: 3px;
+            cursor: pointer;
+
+        }
+
+        .form_input--message{
+            resize: none;
+            padding: 28px 16px;
+            margin-bottom: 8px;
+        }
+
+        /*Seccion precios*/
+        
+        .fondPrec{
+            background-color: black;;
+        }
+
+        .precios{
+            display:flex;
+            flex-direction: column;
+            align-items:  center;
+        }
+        .precios__image{
+            height: 700px;
+            width: 700px;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+        
+        .precios__image img{
+            width: 100%;
+        }
+        /*Footer de todas las paginas*/
+        .footer{
+            bottom: 0;
+            background-color: black;
+        }
+        .footer__descripcion{
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: blanchedalmond;
+        }
+
+        @media screen and (max-width: 1000px){
+
+            /*seccion nosotros*/
+            .nosotros__img img{
+                height: 250px ;
+                width: 400px;
+            }
+
+            .nosotros2__img img{
+                height: 250px ;
+                width: 400px;
+            }
+
+            .acerca__titulo{
+                font-size: 36px;
+                letter-spacing: 3px;
+            }
+    
+            .acerca__info{
+                font-size: 14px;
+                letter-spacing: 1.5px;
+            }
+        }
+
+
+        @media screen and (max-width: 860px){
+
+        /*seccion index*/
+            .logo{
+                padding-left: 10px;
+        }
+        .icon{
+            display: block;
+        }
+        
+        .list__ini{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: rgb(250, 187, 71);
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        nav ul{
+            display: block;
+            line-height: 30px;
+            justify-content: center;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+        nav ul li a{
+            font-size: 20px;
+        }
+
+        li a:hover{
+            background: none;
+            color: red;
+        }
+
+        #check:checked ~ ul{
+            left: 0;
+        }
+
+        .bienvenidos__titulo h1{
+            font-size: 2.2rem;
+            padding-top: 10px;
+        }
+
+        .subtitulo h2{
+            font-size: 1.8rem;
+            margin-top: 15px;
+        }
+        .producto__dest{
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .producto__dest__img{
+            width: 180px;
+            height: 180px;
+            margin: 15px;
+        }
+
+        /*seccion productos*/
+        .container__tit{
+            font-size: 22px;
+        }
+
+        .list2 .dos{
+            font-size: 12px;
+        }
+        .list .uno{
+            font-size: 12px;
+        }
+        /*seccion precios*/
+        .precios__image{
+            height: 400px;
+            width: 400px;
+        }
+
+        /*seccion nosotros*/
+        .acerca__de{
+            gap: 0.5rem;
+        }
+        .nosotros__img img{
+            height: 170px ;
+            width: 260px;
+        }
+
+        .nosotros2__img img{
+            height: 170px ;
+            width: 260px;
+        }
+            .acerca__titulo{
+                font-size: 28px;
+                letter-spacing: 2px;
+            }
+    
+            .acerca__info{
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+        }
+
+        @media screen and (max-width: 480px){
+        /*seccion index*/
+
+            .logo__inicio{
+                height: 70px;
+            }
+            .bienvenidos__titulo h1{
+                font-size: 1.5rem;
+                padding-top: 10px;
+            }
+            .subtitulo h2{
+                font-size: 1.2rem;
+                padding-top: 6px;
+            }
+            .producto__dest{
+                justify-content: flex-start;
+            }
+            .producto__dest__img{
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+
+            /*seccion productos*/
+
+            .container__tit{
+                font-size: 17px;
+                overflow: hidden;
+            }
+            .list2 .dos li{
+                font-size: 9px;
+                overflow: hidden;
+            }
+            .list .uno li{
+                font-size: 9px;
+                overflow: hidden;
+            }
+
+            /*seccion precios*/
+
+            .precios__image{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+            /*seccion nosotros*/
+
+            .nosotros{
+                flex-direction: column;
+            }
+
+            .nosotros2{
+                flex-direction: column;
+            }
+
+
+            /*seccion contacto*/
+            
+            .form{
+                max-width: 200px;
+            }
+            .form__input{
+                font-size: 12px;
+            }
+    
+            .form__titulo{
+                font-size: 18px;
+                overflow: hidden;
+                }
+    
+            .enviado{
+                font-size: 12px;
+            }
+        /*seccion footer*/
+            .footer__descripcion{
+                font-size: 12px;
+            }
+
+        }
