@@ -1,11 +1,11 @@
 # Mi-Gustito-Diaz
 
-## Tecnologias:
+## Tecnologias utilizadas:
 
-*HTML#
+* HTML
 
-*CSS
-    *Flexbox
-    *Grid
+* CSS
+    * Flexbox
+    * Grid
 
 
