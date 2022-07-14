@@ -4,6 +4,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        body{
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: min-content 1fr min-content;
+        }
         /* Header de todas las paginas*/
 
         .inicioCompl{
@@ -24,6 +32,9 @@
             height: 80px;
         }
 
+        .list__ini{
+            margin-bottom: 0px;
+        }
         nav ul{
             float: right;
             margin-right: 20px;
@@ -65,74 +76,30 @@
         }
 
         /* Seccion Index */
-        #home{
-            background: url(./imagenes/fondo-3.jpg) no-repeat fixed;
-            background-size: cover;
-            height: calc(100vh - 99px);
-            margin: 0 auto;
+        .slide{
+            margin-top: 0;
         }
-        .bienvenidos{
+        .slide img{
+            height: 90vh;
+        }
+
+        .titulo__index{
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
             width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-areas: 
-            " titulo "
-            " subtitulo  "
-            " imagen"
-            " imagen"
-            ;
-            }
-        
-            .bienvenidos__titulo{
-                height: 50px;
-            }
-            .bienvenidos__titulo h1{
-                font-family: 'Playfair Display', serif;
-                text-transform: uppercase;
-                font-size: 2.8rem;
-                letter-spacing: 6px;
-                text-align: center;
-                padding-top: 35px;
-                padding-bottom: 20px;
-                color: white;
-            }
-            .subtitulo{
-                height: 50px;
-            }
-            .subtitulo h2{
-                font-family: 'DM Sans', sans-serif;
-                font-size: 2.2rem;
-                letter-spacing: 5px;
-                color: beige;
-                padding-top: 20px;
-                margin-left: 30px;
-            }
-        
-            .producto__dest{
-                grid-row: 3 / 5;
-                width: 100%;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-evenly;
-                align-items: flex-start;
-                overflow: hidden;
-
-            }
-
-            .producto__dest__img{
-                margin: 27px;
-                border-radius: 12px;
-                box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.90);
-                height: 200px;
-                width: 200px;
-            }
-
-            .producto__dest__img:hover{
-                transition: 1s;
-                width: 220px;
-                height: 220px;
-            }
-
+        }
+        .titulo__index h1{
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            letter-spacing: 6px;
+            padding-top: 35px;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
         /*Seccion productos*/
         .container__pr{
             min-height: 100vh;
@@ -321,61 +288,7 @@
         .fond{
             background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
             min-height: 100vh;
-            width: 100%;
-            display: flex;
         }
-        .form{
-            font-family: 'Montserrat', sans-serif;
-            background-color: white;
-            margin: auto;
-            width: 100%;
-            max-width: 400px;
-            border-radius: 16px;
-            padding: 56px 24px;
-        }
-
-        .form__input{
-            font-family: inherit;
-            font-size: 16px;
-            padding: 12px 16px;
-            outline: none;
-            border: none;
-            border: 1px solid black;
-            border-radius: 4px;
-        }
-
-        .form__container{
-            width: 100%;
-            display: grid;
-            gap: 16px;
-            grid-auto-columns: 100%;
-        }
-
-        .form__titulo{
-            text-align: center;
-            font-size: 26px;
-            margin-bottom: 7px;
-            }
-
-        .enviado{
-            font-family: inherit;
-            font-size: 16px;
-            background-color: #089FE0;
-            color: white;
-            border: none;
-            font-weight: 300;
-            padding: 11px;
-            border-radius: 3px;
-            cursor: pointer;
-
-        }
-
-        .form_input--message{
-            resize: none;
-            padding: 28px 16px;
-            margin-bottom: 8px;
-        }
-
         /*Seccion precios*/
         
         .fondPrec{
@@ -403,12 +316,14 @@
         .footer{
             bottom: 0;
             background-color: black;
+            max-height: 100%;
         }
         .footer__descripcion{
             text-align: center;
             font-family: 'DM Sans', sans-serif;
             font-size: 14px;
             color: blanchedalmond;
+            margin-bottom: 0;
         }
 
         @media screen and (max-width: 1000px){
@@ -438,7 +353,7 @@
 
         @media screen and (max-width: 860px){
 
-        /*seccion index*/
+
             .logo{
                 padding-left: 10px;
         }
@@ -449,12 +364,13 @@
         .list__ini{
             position: absolute;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             background: rgb(250, 187, 71);
             top: 80px;
             left: -100%;
             text-align: center;
             transition: all .5s;
+            z-index: 2;
         }
 
         nav ul{
@@ -480,25 +396,9 @@
         #check:checked ~ ul{
             left: 0;
         }
-
-        .bienvenidos__titulo h1{
-            font-size: 2.2rem;
-            padding-top: 10px;
-        }
-
-        .subtitulo h2{
-            font-size: 1.8rem;
-            margin-top: 15px;
-        }
-        .producto__dest{
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .producto__dest__img{
-            width: 180px;
-            height: 180px;
-            margin: 15px;
+        /*seccion index*/
+        .titulo__index h1{
+            font-size: 2rem;
         }
 
         /*seccion productos*/
@@ -542,27 +442,14 @@
             }
         }
 
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 678px){
         /*seccion index*/
 
             .logo__inicio{
                 height: 70px;
             }
-            .bienvenidos__titulo h1{
+            .titulo__index h1{
                 font-size: 1.5rem;
-                padding-top: 10px;
-            }
-            .subtitulo h2{
-                font-size: 1.2rem;
-                padding-top: 6px;
-            }
-            .producto__dest{
-                justify-content: flex-start;
-            }
-            .producto__dest__img{
-                width: 120px;
-                height: 120px;
-                margin: 10px;
             }
 
             /*seccion productos*/
@@ -591,33 +478,23 @@
 
             .nosotros{
                 flex-direction: column;
+                
             }
 
             .nosotros2{
                 flex-direction: column;
             }
+            .nosotros picture ,.nosotros2 picture{
+                display: flex;
+                justify-content: center;
+            }
+            .acerca img{
+                width: 100%;
+                height: auto;
+            }
 
-
-            /*seccion contacto*/
-            
-            .form{
-                max-width: 200px;
-            }
-            .form__input{
-                font-size: 12px;
-            }
-    
-            .form__titulo{
-                font-size: 18px;
-                overflow: hidden;
-                }
-    
-            .enviado{
-                font-size: 12px;
-            }
         /*seccion footer*/
             .footer__descripcion{
                 font-size: 12px;
             }
-
         }
