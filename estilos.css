@@ -103,8 +103,7 @@
         /*Seccion productos*/
         .container__pr{
             min-height: 100vh;
-            background: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.5)),
-            url("https://scontent.fepa2-1.fna.fbcdn.net/v/t1.6435-9/119097010_1600685743452429_5478499972844125379_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=973b4a&_nc_ohc=KUmDVw9zSbwAX-48cWM&_nc_ht=scontent.fepa2-1.fna&oh=00_AT-Y9EfK3QwGatgBxoN_6R5M4NYnyX9KtKXhc6-T3JfgvQ&oe=62D0D15B") no-repeat center center fixed ;
+            background: linear-gradient(rgba(5,7,12,0.5), rgba(5,7,12,0.5)), url(./imagenes/fondo-4.jpg) no-repeat center center fixed ;
             background-size: cover; 
             }
 
