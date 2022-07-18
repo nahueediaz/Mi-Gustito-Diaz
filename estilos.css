@@ -18,39 +18,11 @@
             background-color: rgb(11, 11, 11);
         }
 
-        nav{
-            height: 80px;
-            width: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-        .logo{
-            position: absolute;
-            padding: 0 50px;
-        }
-        .logo__inicio{
-            height: 80px;
-        }
-
         .list__ini{
             margin-bottom: 0px;
         }
-        nav ul{
-            float: right;
-            margin-right: 20px;
-            display:flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-        }
-
-        nav ul li{
-            line-height: 80px;
-            margin: 0 5px;
-        }
 
         nav ul li a{
-            text-decoration: none;
-            color: white;
             font-size: 18px;
             padding: 7px 13px;
             border-radius: 5px;
@@ -61,33 +33,17 @@
             transition: .5s;
         }
 
-        .icon{
-            font-size: 30px;
-            color: white;
-            float: right;
-            line-height: 80px;
-            margin-right: 40px;
-            cursor: pointer;
-            display: none;
-        }
-
-        #check{
-            display: none;
-        }
-
         /* Seccion Index */
         .slide{
             margin-top: 0;
         }
         .slide img{
-            height: 90vh;
+            height: 95vh;
         }
 
         .titulo__index{
-            background-color: blanchedalmond;
             display: flex;
             justify-content: center;
-            width: 100%;
         }
         .titulo__index h1{
             text-align: center;
@@ -96,9 +52,8 @@
             font-size: 2.8rem;
             letter-spacing: 6px;
             padding-top: 35px;
-            color: black;
+            color: white;
             margin: 0;
-            padding: 0;
         }
         /*Seccion productos*/
         .container__pr{
@@ -217,6 +172,8 @@
                         font-size: 15px;
                     }
 
+        /*Seccion nosotros*/
+
         .colorFon{
             background-color: rgb(11, 11, 11);
             margin: 0 auto;
@@ -288,12 +245,29 @@
             background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
             min-height: 100vh;
         }
+        .tit__contact h1{
+            font-size: 44px;
+            margin: 20px 0px;
+            color: whitesmoke;
+            text-align: center;
+            letter-spacing: 5px;
+        }
         /*Seccion precios*/
         
         .fondPrec{
             background-color: black;;
         }
-
+        .precios__tit{
+            width: 100%;
+        }
+        .precios__tit h1{
+            text-align: center;
+            color: goldenrod;
+            margin-top: 15px;
+            font-size: 50px;
+            letter-spacing: 4px;
+            font-family: 'Manrope', sans-serif;
+        }
         .precios{
             display:flex;
             flex-direction: column;
@@ -352,57 +326,13 @@
 
         @media screen and (max-width: 860px){
 
-
-            .logo{
-                padding-left: 10px;
-        }
-        .icon{
-            display: block;
-        }
-        
-        .list__ini{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: rgb(250, 187, 71);
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            z-index: 2;
-        }
-
-        nav ul{
-            display: block;
-            line-height: 30px;
-            justify-content: center;
-        }
-        nav ul li{
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-        }
-
-        nav ul li a{
-            font-size: 20px;
-        }
-
         li a:hover{
             background: none;
             color: red;
         }
-
-        #check:checked ~ ul{
-            left: 0;
-        }
-        /*seccion index*/
-        .titulo__index h1{
-            font-size: 2rem;
-        }
-
         /*seccion productos*/
-        .container__tit{
-            font-size: 22px;
+        .container__tit h1{
+            font-size: 26px;
         }
 
         .list2 .dos{
@@ -466,8 +396,15 @@
                 overflow: hidden;
             }
 
-            /*seccion precios*/
+            .emoji{
+                font-size: 1.4rem;
+                }
 
+            /*seccion precios*/
+            .precios__tit h1{
+                font-size: 26px;
+                overflow: hidden;
+            }
             .precios__image{
                 height: 100%;
                 width: 100%;
@@ -492,6 +429,12 @@
                 height: auto;
             }
 
+            /*Seccion contacto*/
+
+            .tit__contact h1{
+                font-size: 30px;
+                overflow: hidden;
+            }
         /*seccion footer*/
             .footer__descripcion{
                 font-size: 12px;

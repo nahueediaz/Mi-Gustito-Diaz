@@ -13,30 +13,51 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Fascinate&family=IBM+Plex+Mono:ital,wght@1,300&family=Kdam+Thmor+Pro&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../estilos.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Charis+SIL&family=DM+Sans:ital@1&family=Fascinate&family=IBM+Plex+Mono:ital,wght@1,300&family=Kdam+Thmor+Pro&family=Libre+Baskerville:ital@1&family=Manrope:wght@300&family=Montserrat:ital,wght@1,300&family=Playfair+Display:ital@1&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="inicioCompl">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="icon">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <a href="../index.html" class="logo">
-                <img src="../imagenes/Logo.jfif" alt="" class="logo__inicio">
-            </a>
-            <ul class="list__ini">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./nosotros.html">NOSOTROS</a></li>
-                <li><a href="./productos.html">PRODUCTOS</a></li>
-                <li><a href="./precios.html">PRECIOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <span class="text-warning">Mi gustito</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./productos.html" class="nav-link">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./precios.html" class="nav-link active">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+    </header>
     </header>
     <main class="fondPrec">
         <div>
-            <h1 class="precios__tit">Precios</h1>
+            <div class="precios__tit">
+                <h1>Nuestros precios</h1>
+            </div>
             <div class="precios">
                 <picture class="precios__image">
                     <img src="../imagenes/precios-1.jpg" alt="">
@@ -51,6 +72,7 @@
     <footer class="footer">
         <p class="footer__descripcion">Come de verdad, probá nuestras deliciosas empanadas </p>
     </footer>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,10 +2,11 @@
 
 ## Tecnologias utilizadas:
 
-* HTML
+- HTML
 
-* CSS
-    * Flexbox
-    * Grid
+- CSS
 
+  - Flexbox
+  - Grid
 
+- BOOTSTRAP 4.6
