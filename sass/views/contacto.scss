@@ -1,0 +1,23 @@
+/* Seccion Contacto*/
+
+.fond{
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    min-height: 100vh;
+
+    .tit__contact h1{
+        font-size: 44px;
+        margin: 20px 0px;
+        color: whitesmoke;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 678px){
+.fond{
+    .tit__contact h1{
+        font-size: 26px;
+        overflow: hidden;
+    }
+}
+}

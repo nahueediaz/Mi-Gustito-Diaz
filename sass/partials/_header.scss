@@ -1,0 +1,35 @@
+/*seccion header*/
+
+nav{
+    ul{
+        li{
+            a{
+                font-size: $small;
+                border-radius: 5px;}
+        }
+    }
+}
+
+nav{
+    ul{
+        li{
+            a:hover{
+                background: #ef8354;
+            transition: .5s;}
+        }
+    }
+}
+
+@media screen and (max-width: 860px){
+
+
+    nav{
+        ul{
+            li{
+                a:hover{
+                    background: none;
+                    color: red;}
+            }
+        }
+    }
+}

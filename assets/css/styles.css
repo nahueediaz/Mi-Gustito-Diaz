@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/*Colores*/
+/*fuentes*/
+/*espaciados*/
+/*tamaños*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content; }
+
+/*seccion header*/
+nav ul li a {
+  font-size: 1.1em;
+  border-radius: 5px; }
+
+nav ul li a:hover {
+  background: #ef8354;
+  transition: .5s; }
+
+@media screen and (max-width: 860px) {
+  nav ul li a:hover {
+    background: none;
+    color: red; } }
+
+/*seccion index*/
+.slide {
+  margin-top: 0; }
+  .slide img {
+    height: 95vh; }
+
+.titulo__index {
+  display: flex;
+  justify-content: center; }
+  .titulo__index h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 6px;
+    padding-top: 35px;
+    color: white;
+    margin: 0; }
+
+/*seccion productos*/
+.containe {
+  min-height: 100vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../../assets/imagenes/fondo-4.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  .containe__pr {
+    margin: 0 auto;
+    align-items: center;
+    width: 70%; }
+    .containe__pr__list {
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 2fr 1fr;
+      align-content: center;
+      width: 100%;
+      margin: 0 auto;
+      border: 9px;
+      background-color: rgba(0, 0, 0, 0.5); }
+      .containe__pr__list__tit {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 30px;
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 30px;
+        letter-spacing: 1rem; }
+      .containe__pr__list__emoji {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px; }
+        .containe__pr__list__emoji .emoji {
+          transform: rotate(180deg);
+          font-size: 1.7rem; }
+        .containe__pr__list__emoji .emoji:hover {
+          animation: move 1s;
+          animation-iteration-count: infinite; }
+
+@keyframes move {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  20% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  40% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  60% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  80% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  100% {
+    transform: translate(1px, 0px) rotate(1deg); } }
+      .containe__pr__list .sabores {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; }
+        .containe__pr__list .sabores .uno {
+          display: flex;
+          flex-direction: column;
+          letter-spacing: 2px;
+          gap: 1.6rem;
+          text-align: center;
+          padding: 5px;
+          list-style: none;
+          font-family: 'IBM Plex Mono', monospace;
+          font-style: italic;
+          font-size: 15px; }
+      .containe__pr__list .sabores2 {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3; }
+        .containe__pr__list .sabores2 .dos {
+          display: flex;
+          flex-direction: column;
+          letter-spacing: 2px;
+          gap: 1.6rem;
+          text-align: center;
+          padding: 5px;
+          list-style: none;
+          font-family: 'IBM Plex Mono', monospace;
+          font-style: italic;
+          font-size: 1rem; }
+
+@media screen and (max-width: 678px) {
+  .containe__pr__list__tit h1 {
+    font-size: 17px;
+    overflow: hidden; }
+  .emoji span {
+    font-size: 1.4rem; }
+  .sabores .uno li {
+    font-size: 10px;
+    overflow: hidden; }
+  .sabores2 .dos li {
+    font-size: 10px;
+    overflow: hidden; } }
+
+/* Seccion Contacto*/
+.fond {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  min-height: 100vh; }
+  .fond .tit__contact h1 {
+    font-size: 44px;
+    margin: 20px 0px;
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 5px; }
+
+@media screen and (max-width: 678px) {
+  .fond .tit__contact h1 {
+    font-size: 26px;
+    overflow: hidden; } }
+
+/*seccion nosotros*/
+.colorFon {
+  background-color: #0b0b0b;
+  margin: 0 auto; }
+  .colorFon .acerca {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    padding: 30px;
+    width: 100%; }
+    .colorFon .acerca .nosotros {
+      grid-column: 1 / 9;
+      grid-row: 1 / 3;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden; }
+      .colorFon .acerca .nosotros .nosotros__img img {
+        height: 400px;
+        width: 700px; }
+    .colorFon .acerca .nosotros2 {
+      grid-column: 1 / 9;
+      grid-row: 3 / 5;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden; }
+      .colorFon .acerca .nosotros2 .nosotros2__img img {
+        height: 400px;
+        width: 700px; }
+    .colorFon .acerca .acerca__de {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1.7rem;
+      letter-spacing: 1.5px; }
+      .colorFon .acerca .acerca__de .acerca__titulo {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+        color: white; }
+      .colorFon .acerca .acerca__de .acerca__info {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-align: justify;
+        color: antiquewhite; }
+
+@media screen and (max-width: 1000px) {
+  .colorFon .acerca .nosotros .nosotros__img img {
+    height: 250px;
+    width: 400px; }
+  .colorFon .acerca .nosotros2 .nosotros2__img img {
+    height: 250px;
+    width: 400px; }
+  .colorFon .acerca .acerca__de .acerca__titulo {
+    font-size: 36px;
+    letter-spacing: 3px; }
+  .colorFon .acerca .acerca__de .acerca__info {
+    font-size: 14px;
+    letter-spacing: 1.5px; } }
+
+@media screen and (max-width: 860px) {
+  .colorFon .acerca .nosotros .nosotros__img img {
+    height: 170px;
+    width: 260px; }
+  .colorFon .acerca .nosotros2 .nosotros2__img img {
+    height: 170px;
+    width: 260px; }
+  .colorFon .acerca .acerca__de {
+    gap: 0.5rem; }
+    .colorFon .acerca .acerca__de .acerca__titulo {
+      font-size: 28px;
+      letter-spacing: 2px; }
+    .colorFon .acerca .acerca__de .acerca__info {
+      font-size: 10px;
+      letter-spacing: 1px; } }
+
+@media screen and (max-width: 678px) {
+  .colorFon .acerca .nosotros {
+    flex-direction: column; }
+    .colorFon .acerca .nosotros .nosotros__img {
+      display: flex;
+      justify-content: center; }
+      .colorFon .acerca .nosotros .nosotros__img img {
+        width: 100%;
+        height: auto; }
+  .colorFon .acerca .nosotros2 {
+    flex-direction: column; }
+    .colorFon .acerca .nosotros2 .nosotros2__img {
+      display: flex;
+      justify-content: center; }
+      .colorFon .acerca .nosotros2 .nosotros2__img img {
+        width: 100%;
+        height: auto; } }
+
+/*Seccion precios*/
+.fondPrec {
+  background-color: black; }
+  .fondPrec div .precios__tit {
+    width: 100%; }
+    .fondPrec div .precios__tit h1 {
+      text-align: center;
+      color: goldenrod;
+      margin-top: 15px;
+      font-size: 50px;
+      letter-spacing: 4px;
+      font-family: 'Manrope', sans-serif; }
+  .fondPrec div .precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .fondPrec div .precios .precios__image {
+      height: 700px;
+      width: 700px;
+      padding: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden; }
+      .fondPrec div .precios .precios__image img {
+        width: 100%; }
+
+@media screen and (max-width: 860px) {
+  .fondPrec div .precios .precios__image {
+    height: 400px;
+    width: 400px; } }
+
+@media screen and (max-width: 678px) {
+  .fondPrec div .precios__tit h1 {
+    font-size: 26px;
+    overflow: hidden; }
+  .fondPrec div .precios .precios__image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; } }
+
+/*seccion footer*/
+footer {
+  bottom: 0;
+  background-color: black;
+  max-height: 100%; }
+  footer .footer__descripcion {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1em;
+    color: blanchedalmond;
+    margin-bottom: 0; }
+
+@media screen and (max-width: 678px) {
+  footer .footer__descripcion {
+    font-size: 12px; } }

@@ -1,0 +1,74 @@
+/*Seccion precios*/
+
+.fondPrec{
+    background-color: black;
+
+    div{
+
+    .precios__tit{
+        width: 100%;
+
+        h1{
+            text-align: center;
+            color: goldenrod;
+            margin-top: 15px;
+            font-size: $font-title;
+            letter-spacing: 4px;
+            font-family: 'Manrope', sans-serif;
+        }
+    }
+
+    .precios{
+        display:flex;
+        flex-direction: column;
+        align-items:  center;
+
+        .precios__image{
+            height: 700px;
+            width: 700px;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 860px){
+.fondPrec{
+    div{
+        .precios{
+            .precios__image{
+                height: 400px;
+                width: 400px;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 678px){
+.fondPrec{
+    div{
+        .precios__tit{
+            h1{
+                font-size: 26px;
+                overflow: hidden;
+            }
+        }
+
+        .precios{
+            .precios__image{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+}
+}

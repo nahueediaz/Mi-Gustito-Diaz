@@ -1,0 +1,25 @@
+/*seccion index*/
+
+.slide{
+    margin-top: 0;
+
+img{
+    height: 95vh;
+}
+}
+
+.titulo__index{
+    display: flex;
+    justify-content: center;
+
+h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 6px;
+    padding-top: 35px;
+    color: white;
+    margin: 0;
+}
+}

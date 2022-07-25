@@ -1,0 +1,21 @@
+/*seccion footer*/
+footer{
+    bottom: 0;
+    background-color: black;
+    max-height: 100%;
+    
+    .footer__descripcion{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: $small;
+    color: blanchedalmond;
+    margin-bottom: 0;}
+}
+
+@media screen and (max-width: 678px){
+footer{
+    .footer__descripcion{
+        font-size: 12px;
+    }
+}
+}
