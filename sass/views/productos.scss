@@ -38,9 +38,7 @@
             &__emoji{
                 grid-column: 2 / 4;
                 grid-row: 1 / 2;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
+                @include flex (null,center,flex-end);
                 padding-bottom: 20px;
     
                 .emoji{
@@ -83,11 +81,9 @@
                 grid-row: 2 / 3;
 
                 .uno{
-                    display: flex;
-                    flex-direction: column;
+                    @include flex(column,null,center);
                     letter-spacing: 2px;
                     gap: 1.6rem;
-                    text-align: center;
                     padding: 5px;
                     list-style: none;
                     font-family: 'IBM Plex Mono', monospace;
@@ -101,11 +97,9 @@
                 grid-row: 2 / 3;
 
                 .dos{
-                    display: flex;
-                    flex-direction: column;
+                    @include flex(column,null,center);
                     letter-spacing: 2px;
                     gap: 1.6rem;
-                    text-align: center;
                     padding: 5px;
                     list-style: none;
                     font-family: 'IBM Plex Mono', monospace;
@@ -120,7 +114,7 @@
 @media screen and (max-width: 678px){
 
 .containe__pr__list__tit h1{
-    font-size: 17px;
+    font-size: map-get($fuentes ,small );
     overflow: hidden;
     }
 
@@ -131,7 +125,7 @@
 .sabores{
     .uno{
         li{
-            font-size: 10px;
+            font-size: 12px;
             overflow: hidden;
         }
     }
@@ -140,7 +134,7 @@
 .sabores2{
     .dos{
         li{
-            font-size: 10px;
+            font-size: 12px;
             overflow: hidden;
         }
     }

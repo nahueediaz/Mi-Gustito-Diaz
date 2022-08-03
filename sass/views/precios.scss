@@ -12,16 +12,14 @@
             text-align: center;
             color: goldenrod;
             margin-top: 15px;
-            font-size: $font-title;
+            font-size: map-get($fuentes, size-tittle );
             letter-spacing: 4px;
             font-family: 'Manrope', sans-serif;
         }
     }
 
     .precios{
-        display:flex;
-        flex-direction: column;
-        align-items:  center;
+        @include flex (column, null, center);
 
         .precios__image{
             height: 700px;
@@ -35,6 +33,9 @@
                 width: 100%;
             }
         }
+        .precios__image2{
+            @extend .precios__image;
+        }
     }
 }
 }
@@ -44,6 +45,10 @@
     div{
         .precios{
             .precios__image{
+                height: 400px;
+                width: 400px;
+            }
+            .precios__image2{
                 height: 400px;
                 width: 400px;
             }
@@ -64,6 +69,11 @@
 
         .precios{
             .precios__image{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+            .precios__image2{
                 height: 100%;
                 width: 100%;
                 overflow: hidden;

@@ -4,7 +4,7 @@ nav{
     ul{
         li{
             a{
-                font-size: $small;
+                font-size: map-get($fuentes , small );
                 border-radius: 5px;}
         }
     }
