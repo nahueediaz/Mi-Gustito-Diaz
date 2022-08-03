@@ -7,7 +7,7 @@ footer{
     .footer__descripcion{
     text-align: center;
     font-family: 'DM Sans', sans-serif;
-    font-size: $small;
+    font-size: map-get($fuentes ,small );
     color: blanchedalmond;
     margin-bottom: 0;}
 }
