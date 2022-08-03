@@ -1,8 +1,7 @@
-@charset "UTF-8";
 /*Colores*/
 /*fuentes*/
 /*espaciados*/
-/*tamaños*/
+/*map*/
 * {
   margin: 0;
   padding: 0;
@@ -110,9 +109,9 @@ nav ul li a:hover {
         .containe__pr__list .sabores .uno {
           display: flex;
           flex-direction: column;
+          align-items: center;
           letter-spacing: 2px;
           gap: 1.6rem;
-          text-align: center;
           padding: 5px;
           list-style: none;
           font-family: 'IBM Plex Mono', monospace;
@@ -124,9 +123,9 @@ nav ul li a:hover {
         .containe__pr__list .sabores2 .dos {
           display: flex;
           flex-direction: column;
+          align-items: center;
           letter-spacing: 2px;
           gap: 1.6rem;
-          text-align: center;
           padding: 5px;
           list-style: none;
           font-family: 'IBM Plex Mono', monospace;
@@ -135,7 +134,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 678px) {
   .containe__pr__list__tit h1 {
-    font-size: 17px;
+    font-size: 1.1em;
     overflow: hidden; }
   .emoji span {
     font-size: 1.4rem; }
@@ -178,7 +177,6 @@ nav ul li a:hover {
       grid-column: 1 / 9;
       grid-row: 1 / 3;
       display: flex;
-      flex-direction: row;
       overflow: hidden; }
       .colorFon .acerca .nosotros .nosotros__img img {
         height: 400px;
@@ -187,7 +185,6 @@ nav ul li a:hover {
       grid-column: 1 / 9;
       grid-row: 3 / 5;
       display: flex;
-      flex-direction: row;
       overflow: hidden; }
       .colorFon .acerca .nosotros2 .nosotros2__img img {
         height: 400px;
@@ -199,7 +196,7 @@ nav ul li a:hover {
       gap: 1.7rem;
       letter-spacing: 1.5px; }
       .colorFon .acerca .acerca__de .acerca__titulo {
-        font-family: 'Alegreya Sans', sans-serif;
+        font-family: "Alegreya Sans", sans-serif;
         font-size: 2.8rem;
         letter-spacing: 4px;
         color: white; }
@@ -267,25 +264,28 @@ nav ul li a:hover {
       text-align: center;
       color: goldenrod;
       margin-top: 15px;
-      font-size: 50px;
+      font-size: 2.8rem;
       letter-spacing: 4px;
       font-family: 'Manrope', sans-serif; }
   .fondPrec div .precios {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .fondPrec div .precios .precios__image {
+    .fondPrec div .precios .precios__image, .fondPrec div .precios .precios__image2 {
       height: 700px;
       width: 700px;
       padding: 30px;
       margin-left: auto;
       margin-right: auto;
       overflow: hidden; }
-      .fondPrec div .precios .precios__image img {
+      .fondPrec div .precios .precios__image img, .fondPrec div .precios .precios__image2 img {
         width: 100%; }
 
 @media screen and (max-width: 860px) {
-  .fondPrec div .precios .precios__image {
+  .fondPrec div .precios .precios__image, .fondPrec div .precios .precios__image2 {
+    height: 400px;
+    width: 400px; }
+  .fondPrec div .precios .precios__image2 {
     height: 400px;
     width: 400px; } }
 
@@ -293,7 +293,11 @@ nav ul li a:hover {
   .fondPrec div .precios__tit h1 {
     font-size: 26px;
     overflow: hidden; }
-  .fondPrec div .precios .precios__image {
+  .fondPrec div .precios .precios__image, .fondPrec div .precios .precios__image2 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; }
+  .fondPrec div .precios .precios__image2 {
     height: 100%;
     width: 100%;
     overflow: hidden; } }
