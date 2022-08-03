@@ -9,17 +9,16 @@ img{
 }
 
 .titulo__index{
-    display: flex;
-    justify-content: center;
+    @include flex (null,center,null);
 
 h1{
     text-align: center;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: map-get($fuentes , size-tittle );
     letter-spacing: 6px;
     padding-top: 35px;
-    color: white;
+    color: $secondary;
     margin: 0;
 }
 }
